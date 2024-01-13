@@ -1,5 +1,5 @@
 # simple-cut
-.bat file to cut a video on windows
+.bat file to cut a video on windows (Not tested on Linux)
 
 Simple bat file to cut a video from desired times on Windows using ffmpeg. 
 
