@@ -10,3 +10,5 @@ Optional dependency: [Discordcompressor](https://github.com/vladaad/discordcompr
 Usage: "simple-cut.bat [filename] [start-time] [end-time]"
 
 Example: ".\simple-cut.bat video.mp4 1:44 1:48"
+
+I recommend adding the script to your path, for example D:/simple-cut/simple-cut.bat so you can use it anywhere in powershell (or cmd), the output video file gets placed in the input files folder regardless what direction your powershell is. 
