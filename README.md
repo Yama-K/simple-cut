@@ -3,9 +3,7 @@
 
 Simple bat file to cut a video from desired times on Windows using ffmpeg. 
 
-Dependencies: [ffmpeg](https://ffmpeg.org/)
-
-Optional dependency: [Discordcompressor](https://github.com/vladaad/discordcompressor)
+Dependencies: [ffmpeg](https://ffmpeg.org/) [Discordcompressor](https://github.com/vladaad/discordcompressor)
 
 Usage: "simple-cut.bat [filename] [start-time] [end-time]"
 
