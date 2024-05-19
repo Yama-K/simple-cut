@@ -42,12 +42,12 @@ ffmpeg -ss %start_time% -i "%input%" -t %duration% -c:v copy "%output%"
 
 echo Video trimmed successfully from %start_minute%:%start_second% to %end_minute%:%end_second%.
 
-rem Compress the trimmed video using DiscordCompressor
-discordcompressor.exe --size 25 "%output%"
-
 rem If the --mute option is provided, remove the audio from the trimmed video
 if "%~4"=="--mute" (
     ffmpeg -i "%output%" -c:v copy -an "%~dpn1_cut_muted.mp4"
     move /y "%~dpn1_cut_muted.mp4" "%output%"
     echo Audio removed from the trimmed video.
 )
+
+rem Compress the (possibly muted) trimmed video using DiscordCompressor
+discordcompressor.exe --size 25 "%output%"
